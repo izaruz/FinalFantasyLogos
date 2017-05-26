@@ -3,12 +3,14 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Best logos of the series | Final Fantasy</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<!-- Google fonts-->
 		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Merienda|Satisfy|Muli|Oswald" rel="stylesheet">
 		
 		<!-- Styles css-->
 		<link rel="stylesheet" href="style.css">
+<!--		<link rel="stylesheet" media="(max-width: 800px)" href="css/media-query.css">-->
 	</head>
 
 	<body>
@@ -86,4 +88,20 @@
 			<h3>Izaruz | izaruz@gmail.com</h3>
 		</div>
 	</footer>
+	
+	<script>
+		const place1 = document.getElementById('logo-1');
+		const place2 = document.getElementById('logo-2');
+		const place3 = document.getElementById('logo-3');
+		const place4 = document.getElementById('logo-4');
+		const place5 = document.getElementById('logo-5');
+		window.addEventListener('scroll',function(e){
+			var position = window.scrollY-450;
+			place1.style.transform = ('translate(0px, -' + position*0.1 + 'px)')
+			place2.style.transform = ('translate(0px, -' + position*0.1 + 'px)')
+			place3.style.transform = ('translate(0px, -' + position*0.1 + 'px)')
+			place4.style.transform = ('translate(0px, -' + position*0.1 + 'px)')
+			place5.style.transform = ('translate(0px, -' + position*0.1 + 'px)')
+		})
+	</script>
 </html>
