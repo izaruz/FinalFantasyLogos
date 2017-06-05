@@ -38,6 +38,8 @@ body{
 	position: absolute;
 	top: 20px;
 	left: 20px;
+	z-index: 1000;
+	visibility: hidden;
 }
 
 .menu {
@@ -305,6 +307,10 @@ body{
 		font-size: 18px;
 	}
 	
+	.burguer-menu{
+		visibility: visible;
+	}
+	
 	.menu{
 		background: rgba(67,66,83,0.8);
 		position: absolute;
@@ -313,7 +319,7 @@ body{
 		bottom: 0;
 		right: 0;
 		width: 100%;
-		z-index: 1000;
+		z-index: 500;
 		display: flex;
 		align-items: center;
 		transition: .3s;
